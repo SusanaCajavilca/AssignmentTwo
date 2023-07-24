@@ -1,0 +1,569 @@
+/*******************/
+/* General Styling */
+/*******************/
+
+/*body class=Index is for the Home Page */
+/*body class=Order is for the Order Page */
+
+/*Color Palette*/
+/*Since this is a Pizza Theme, the main colors will be red, green, mustard*/
+/*Sort of dark green: #1A5D1A */
+/*Sort of dark red: #820000 */
+/*Mustard:#E7B10A  */
+/*Light Mustard: #FFEF82 */
+/*Additional colors are added on the menu in footer in order to see that change of breakpoint*/
+
+/*******************/
+/*Working on general settings of Index page and Order page*/
+
+.Index,
+.Order {
+    margin:0px; /*This value goes for default */
+    background-color: #FFEF82; /*Using a light mustard*/
+}
+.Index  h1{
+    font-family: 'Caprasimo', sans-serif;  /* setting general text properties */
+    text-decoration: none;
+    font-size: 120px;  /* a big size because this is the name of the Pizza Chain */
+    background-color: #1A5D1A; /*dark green*/
+    text-align: center;
+    padding: 2%; /* giving a little space around the name */
+    margin-top: 2%; /* giving a little space before the heading */
+    margin-bottom: 2%; /* giving a little space after the heading */
+}
+
+.Index  h2{
+    font-family: 'Gorditas', sans-serif; /* setting general text properties */
+    font-size: 50px;
+    margin: 0px;
+}
+
+.Index p,.Index a,.Index li {
+    font-family: 'Lumanosimo', sans-serif;  /* setting more general text properties */
+    text-decoration: none; /*Removing the lines under the words of the menu*/
+    list-style: none; /*Removing the dots of the navigation menu*/
+}
+
+.Intro p{   /* This only applies to the "Our history" paragraph text  */
+    font-size: 25px;
+    padding: 1%;
+    justify-content: center;
+    text-align: center;
+}
+
+.word{
+    color:red ; /* This changes only certain words in red, in order to highlight them  */
+    font-weight: bold; /* using a bold font*/
+}
+
+/*******************/
+/* Working in the header  */
+/* Since both html pages has the header only named as "header", then one configuration will apply for both pages */
+
+ header {
+    height: 130px;
+    width: auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #820000; /* Using a Dark Red*/
+}
+
+header > div{
+    width: auto;
+    height: 120px;
+    flex-grow: 1;  /*Putting the navigation menu on the right side*/
+}
+
+ header >div> a > img{
+    width: auto;
+    height: 100%;
+}
+
+header > nav > menu{
+    display: flex;
+    list-style: none; /*Removing the dots of the navigation menu*/
+
+}
+header > nav > menu > li {
+    padding: 0px 10px;  /*Setting the padding of the navigation menu*/
+}
+
+ header > nav > menu > li>a {
+    color: #f4f4f4;   /*Using a nice white for the navigation menu*/
+    font-size: 22px;
+}
+
+.Order a,.Order li {
+    font-family: 'Lumanosimo', sans-serif;  /* setting more general text properties */
+    text-decoration: none; /*Removing the lines under the words of the menu*/
+    list-style: none; /*Removing the dots of the navigation menu*/
+}
+
+/*******************/
+/* Working in the footer  */
+/* Since both html pages has the footer only named as "footer", then one configuration will apply for both pages */
+
+footer{
+    display: flex;    /*Setting  the footer*/
+    align-items: center;
+    background-color:#E7B10A;  /* Using a Mustard*/
+    color:#0e0e0e;  /*Using a nice black for the text*/
+}
+
+footer div{
+    padding: 5px; /*Setting  the div inside the footer */
+}
+
+footer div:nth-child(1),
+footer div:nth-child(2),
+footer div:nth-child(3){
+    height: 150px;   /*Setting  the height of the footer*/
+    width: auto;
+}
+
+
+footer div:nth-child(1) img,
+footer div:nth-child(3) img{
+    width: auto;      /*Adjusting the two images of the footer*/
+    height: 100%;
+}
+ footer div:nth-child(3){
+    margin-left: auto;  /*With this I move the Hasbro Logo to the right corner*/
+
+}
+
+footer div:nth-child(2) p{
+    padding-top: 50px;  /*With this I move the text a little to the center of the footer*/
+}
+
+footer div:nth-child(3) img {
+    padding-right: 10px; /*With this I adjust a little the space between the logo and the right side*/
+}
+
+footer p{
+    font-family: 'Lumanosimo', sans-serif;  /* setting more general text properties */
+}
+
+/*******************/
+/*Working on specific settings of Index page */
+
+.Index > main > section{
+    padding:1%;          /*Adding a short margin */
+    text-align: center;  /*Putting the video in the center */
+}
+
+.button-1{
+    background-color: #1A5D1A; /*dark green*/
+    color: #f4f4f4;   /*Using a nice white */
+    font-size: 50px;
+    border-radius: 5px;  /*adjusting borders*/
+    padding: 1%;
+}
+
+/*******************/
+/*Working on specific settings of Order page */
+
+.Order > main > section:nth-child(2){
+    padding:1%;          /*Adding a short margin */
+    text-align: center;  /*Putting the video in the center */
+}
+
+.Order h1{
+    font-family: 'Merienda', sans-serif;  /* setting more general text properties */
+    font-size: 55px;
+    background-color: #E7B10A;  /*Mustard*/
+}
+
+.Order h2{
+    font-family: 'Merienda', sans-serif;  /* setting more general text properties */
+    font-size: 35px;
+    background-color: #E7B10A; /*Mustard*/
+
+}
+
+.Order>main>section:nth-child(3) {
+    font-family: 'Roboto', sans-serif;  /* setting more general text properties */
+    font-size: 18px;           /* the third sections contains the form */
+}
+.Order>main>section:nth-child(3){
+    text-align: center;   /* putting in the center all the text of the form */
+}
+
+.Order>main>section:nth-child(3)>form>section>p {
+    text-align: left;  /* putting to the left the labels of the form */
+    background-color: #820000;  /* using a dark red for the labels of the form */
+    color: #f4f4f4;            /* using a nice white for the text of labels of the form */
+    margin: 2.5%;
+    padding: 0.7%;
+    font-weight: bold;   /* bold style */
+}
+
+.Order>main>section:nth-child(3)>form>section:nth-child(3) {
+    margin-bottom: 1%;    /* giving a short space between the 2 buttons and the footer */
+}
+
+.perinf{
+    display: grid;
+    grid-template-columns: 1fr; /* One column */
+    grid-gap: 10px; /* Add some spacing */
+    background-color: #820000; /*dark red*/
+    color: #f4f4f4;   /*Using a nice white */
+    margin-bottom: 1%;
+    padding-left: 14%; /*To move the content to the center of the screen*/
+}
+
+.perinf> p {
+    display: grid;     /* One column for the labels and one column for the input area */
+    grid-template-columns: 30% 70%; /* Adjusting the column widths as needed */
+    align-items: center;
+
+}
+
+.perinf > p>label {
+    text-align: right;  /* The labels goes to the right extreme of their space */
+    margin-right: 10px;
+
+}
+
+.perinf > p> input {
+    width: 40%; /* Adjust the width as needed to control the size of the input box */
+}
+
+.perinf > p> textarea {
+    width: 40%; /* Adjust the width as needed to control the size of the texarea box */
+}
+
+.boton1{  /*These are the last buttons before the footer, the reset and submit buttons*/
+    font-family: 'Merienda', sans-serif;
+    background-color: #820000; /*dark red*/
+    color: #f4f4f4;   /*Using a nice white */
+    font-size: 20px;
+    border-radius: 5px;  /*adjusting borders*/
+    padding: 1%;
+}
+
+/*******************/
+/* Responsive Design */
+/* My "breakpoints" are 1200px, 1024px, 900px, 768px, 600px, 480px, and 320px */
+/* Vertical Orientation */
+/*Working on Index ans Order pages */
+/*Working on Order page*/
+
+
+@media screen and (max-width: 1200px) { /*1st breakpoint*/
+
+/*Working on Index page */
+.Index>  main > section:nth-child(1)>video{
+    width: 80%;
+    height: auto;
+}
+
+/*Working on Order page*/
+/*Nothing to change/adjust here*/
+}
+
+@media screen and (max-width: 1024px) { /*2nd breakpoint*/
+
+/*Working on Index page */
+    header>nav>menu>li>a{
+        color:#E7B10A;  /*changing the color of the menu to mustard*/
+    }
+
+/*Working on Order page*/
+/*Nothing to change/adjust here*/
+}
+
+@media screen and (max-width: 900px) { /*3rd breakpoint*/
+
+/*Working on Index page */
+
+    header>nav>menu>li>a{
+        color:lawngreen;  /*changing the color of the menu to lawgreen */
+    }
+
+    .Index>main>section:nth-child(2){
+        width: auto;
+    }
+
+    .Index h1{
+        font-size: 90px; /*reducing the font size of the h1*/
+    }
+
+    .Intro>p{
+        font-size: 20px; /*reducing the font size of the "Our history" paragraph text*/
+    }
+
+    .button-1{
+
+        font-size: 40px;  /*reducing the font size of the order button*/
+        border-radius: 5px;
+        padding: 1%;
+    }
+
+    footer>div:nth-child(2)>p{
+        font-size:12px;   /*reducing the font size of the footer*/
+    }
+
+
+/*Working on Order page*/
+
+    .Order h1   {
+        font-size: 45px; /*reducing the font size of h1*/
+    }
+
+    .perinf{
+        padding-left: 20%; /*To move the content to the center of the screen*/
+    }
+}
+
+@media screen and (max-width: 768px) { /*4th breakpoint*/
+
+/*Working on Index page */
+    header>nav>menu>li>a{
+        color:yellow;  /*changing the color of the menu to yellow */
+    }
+
+    .Index h2{
+        font-size: 40px; /*reducing the font size of the h2*/
+    }
+
+    .Intro>p{
+        font-size: 17px; /*reducing the font size of the "Our history" paragraph text*/
+    }
+
+/*Working on Order page*/
+
+    .Order h1   {
+        font-size: 40px; /*reducing the font size of h1*/
+    }
+
+    .perinf{
+        padding-left: 26%; /*To move the content to the center of the screen*/
+    }
+
+    .perinf> p {
+        margin-top:8px;  /*Reducing the space between elements on this section of the form*/
+        margin-bottom: 8px;
+    }
+
+    .Order>main>section:nth-child(3) {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;   /*Reducing the font size form in order to avoid scrambled text */
+}
+}
+@media screen and (max-width: 600px) { /*5th breakpoint*/
+
+/*Working on Index page */
+    header>nav>menu>li>a{
+        color:#228B22;  /*changing the color of the menu to forest green */
+    }
+
+    header{
+        width: 114%; /*adjusting the header, works for both pages*/
+    }
+
+    .Index>  main > section:nth-child(1)>video{
+        padding-left: 20%; /*moving the video a little to right*/
+    }
+
+
+    .Intro{
+        margin-left: 17%; /*moving the block a little to right*/
+    }
+
+
+    .Index>main>section:nth-child(2){
+        width: 119%;  /*adjusting the section for the h1*/
+    }
+
+    .Index h1 {
+        font-size: 80px; /*reducing the font size of the h1*/
+    }
+
+   .Index>  main > section:nth-child(4)>img{
+    width: 80%;  /*reducing the width of the combo images*/
+    margin-left: 17%; /*moving the block a little to right*/
+
+}
+    footer{
+        width: 121%; /*adjusting the footer, works for both pages*/
+    }
+
+    footer div:nth-child(1),
+    footer div:nth-child(2),
+    footer div:nth-child(3){
+        height: 120px;   /*reducing  the height of the footer*/
+        width: auto;
+    }
+
+
+/*Working on Order page*/
+
+    .Order >main{
+        width: 120%; /*adjusting the whole text of the form*/
+    }
+
+    .perinf> p {
+        margin-top:6px;  /*Reducing the space between elements on this section of the form*/
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) { /*6th breakpoint*/
+
+/*Working on Index page */
+
+    header>nav>menu>li>a{
+        color:#00FFFF;  /*changing the color of the menu to Aquamarine*/
+    }
+
+    header{
+        width: 117%; /*adjusting the header, works for both pages*/
+    }
+
+    .Index>main>section:nth-child(2){
+        width: 123%;  /*adjusting the section for the h1*/
+    }
+
+    .Index h1 {
+        font-size: 60px; /*reducing the font size of the h1*/
+    }
+
+    footer{
+        width: 125%; /*adjusting the footer, works for both pages*/
+    }
+
+    .button-1{
+
+        font-size: 30px;  /*reducing the font size of the order button*/
+
+    }
+
+    .Index>  main > section:nth-child(4)>img {
+        margin-left: 20%;  /*moving the block a little to right*/
+    }
+/*Working on Order page*/
+    .Order h1   {
+        font-size: 30px; /*reducing the font size of h1*/
+    }
+
+    .Order h2   {
+        font-size: 20px; /*reducing the font size of h2*/
+    }
+
+    .perinf {
+        grid-gap: 2px; /*Reducing the gap in the second part of the form */
+    }
+
+    .perinf> p {
+        grid-template-columns: 26% 90%; /*Adjusting the proportion between labels and inputboxes*/
+    }
+
+    .Order>main>section:nth-child(3)> form>section>label {
+        /* This part was the hardest one, I tried to do my very best,I hope you will consider my effort */
+        display: flex; /* Display each radio button and label in one line */
+        flex-direction: column;
+        margin: 5px 0px;
+        font-size: 18px; /* Adjust the font size as needed */
+        align-items: center; /* Align items horizontally in the center */
+
+    }
+    .Order>main>section:nth-child(3)> form>section>p{
+        font-size: 18px;
+    }
+
+    .Order> main{
+        margin-left: 2%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 320px) {  /*7th breakpoint*/
+    /*7th breakpoint*/
+    /*Working on Index page */
+    header > nav > menu > li > a {
+        color: #08ff08; /*changing the color of the menu to fluorescent green */
+    }
+
+    header {
+        width: 125%; /*adjusting the header, works for both pages*/
+    }
+
+    .Index > main > section:nth-child(1) > video {
+        width: 155%;
+        height: auto;
+
+    }
+
+    .Index > main > section:nth-child(1) {
+        padding-right: 32%;
+    }
+
+    .Index h1 {
+        font-size: 50px; /*reducing the font size of the h1*/
+    }
+
+    .Index > main > section:nth-child(2) {
+        width: 135%; /*adjusting the section for the h1*/
+    }
+
+    .Intro {
+        width: 305px; /*adjusting the size of the text*/
+    }
+
+    .Index > main > section:nth-child(4) > img {
+        margin-left: 30%; /*moving the block a little to right*/
+    }
+
+    footer {
+        width: 137%; /*adjusting the footer, works for both pages*/
+    }
+
+    footer div:nth-child(1),
+    footer div:nth-child(2),
+    footer div:nth-child(3) {
+        height: 100px; /*reducing  the height of the footer*/
+        width: auto;
+    }
+
+    footer div:nth-child(2) p {
+        padding-top: 20px; /*With this I move the text a little to the center of the footer*/
+    }
+
+    /*Working on Order page*/
+    .Order h1   {
+        font-size: 21px; /*reducing the font size of h1*/
+    }
+
+    .Order h2   {
+        font-size: 20px; /*reducing the font size of h2*/
+    }
+
+    .perinf> p {
+        grid-template-columns: 30% 90%; /*Adjusting the proportion between labels and inputboxes*/
+    }
+
+    .perinf {
+        grid-gap: 1px; /*Reducing the gap in the second part of the form */
+    }
+
+    .perinf> p {
+        margin-top:2px;  /*Reducing the space between elements on this section of the form*/
+        margin-bottom: 2px;
+    }
+
+    .Order> main{
+        margin-left: 7%;
+    }
+
+    .perinf> p {
+        grid-template-columns: 35% 120%; /*Adjusting the proportion between labels and inputboxes*/
+    }
+
+
+}
+
+

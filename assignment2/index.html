@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta data part -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 2: Let’s Order a Pizza - Home</title>
+    <meta name="description" content="In this assignment we will construct a two-page website for ordering pizza - Home Page ">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Some interesting facts about Pizza -->
+    <!-- Pizza is a 37 billion dollar industry  -->
+    <!-- The most popular pizza topping is pepperoni -->
+    <!--The Hawaiian pizza was invented in Canada -->
+
+    <!-- adding 5 Google Fonts: Lumanosimo, Merienda, Gorditas, Caprasimo and Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Gorditas&family=Lumanosimo&family=Merienda:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- adding our CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- I choose to work with Flexbox -->
+<body class="Index">
+<header>
+    <div>
+        <!-- Here I put a Pizza Logo, that is also a link to the Home Page -->
+        <a href="index.html"><img src="./img/logo_pizza1.jpg" alt="Pizza Logo 1"></a>
+    </div>
+    <nav>
+        <menu>
+            <!-- Here I put the Navigation Group of Links to the two pages-->
+            <!-- The order of the two pages is according to the directions of the assignment-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="formu.html">Order</a></li>
+        </menu>
+    </nav>
+</header>
+<main>
+    <section>
+        <!-- Here I put a video-->
+        <!-- This 48-seconds video is a person making a pizza in an aesthetic way-->
+        <video autoplay muted controls loop>
+            <!-- Using the loop, the video will keep playing forever-->
+            <source src="./vids/Pizza_Video.mp4" type="video/mp4">
+            Your browser does not support the video element
+            <!-- Copyright: Nane Sargsyan - source: https://www.youtube.com/watch?v=T3AHBe0I0yc  -->
+        </video>
+    </section>
+    <section>
+        <!-- Here I put the fictional name of the Pizza Store, this is the biggest title on the page-->
+        <h1>PIZZALANDIA</h1>
+    </section>
+    <section class="Intro">
+        <!--A short text about PIZZALANDIA,to secure a polished finish -->
+        <h2>Our history</h2>
+        <p>Since 1987, we are proud to serve <span class="word">the best pizzas</span> in Barrie. If you want to taste the real Italian Flavour, this is the right choice. Our ingredients are top-qualities. Our recipes are the result of years of mastering the pizza technique. Our specialities include the Hawaian, the American, the Napolitan and the BBQ between others. Currently, our establishment is under renovations, so we are happy to make a <span class="word">delivery</span> at your home. We promise that you will receive the very best, and we assure that you will ask back for more!</p>
+        <!--Here a put a button that links to the Order page -->
+        <a href="formu.html" class="button-1">Order now!</a>
+        <!--Here a put a short text -->
+        <p>Try our most rank-sellers combos:</p>
+    </section>
+    <section>
+        <!-- Here I put 4 images o the preset 4 combos of the Pizza Store-->
+        <img src="./img/combo1.jpg" alt="Combo 1">
+        <img src="./img/combo2.jpg" alt="Combo 2">
+        <img src="./img/combo3.jpg" alt="Combo 3">
+        <img src="./img/combo4.jpg" alt="Combo 4">
+        <!-- I have seen that pizza stores offer preset choices for lazy costumers who don't want to manually select every detail of their orders -->
+    </section>
+</main>
+<footer>
+    <div>
+        <img src="./img/logo_garlfied.jpg" alt="Garfield Logo">
+        <!--Garfield is an American comic strip created by Jim Davis. -->
+        <!--Also, Garfield loves pizza -->
+    </div>
+    <div>
+        <p>©Susana Cajavilca Design. 2023. All rights reserved</p>
+    </div>
+    <div>
+        <img src="./img/logo_pizza2.jpg" alt="Pizza Logo 2">
+    </div>
+</footer>
+</body>
+</html>

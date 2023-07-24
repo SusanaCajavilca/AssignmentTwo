@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta data part -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 2: Let’s Order a Pizza - Order</title>
+    <meta name="description" content="In this assignment we will construct a two-page website for ordering pizza - Order Page ">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- More interesting facts about Pizza -->
+    <!-- A pizza was delivered in Space in 2001  -->
+    <!-- There is a mathematical theorem named after pizza -->
+    <!-- Pizza only came to America by the late 1800s -->
+
+    <!-- adding 5 Google Fonts: Lumanosimo, Merienda, Gorditas, Caprasimo and Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Gorditas&family=Lumanosimo&family=Merienda:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- adding our CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- I choose to work with Flexbox -->
+<body class="Order">
+<header>
+    <div>
+        <!-- Here I put a Pizza Logo, that is also a link to the Home Page -->
+        <a href="index.html"><img src="./img/logo_pizza1.jpg" alt="Pizza Logo 1"></a>
+    </div>
+    <nav>
+        <menu>
+            <!-- Here I put the Navigation Group of Links to the two pages-->
+            <!-- The order of the two pages is according to the directions of the assignment-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="formu.html">Order</a></li>
+        </menu>
+    </nav>
+</header>
+<main>
+    <section>
+        <!-- Here I put the text title that states the main purpose of this page-->
+        <h1>Customize your pizza order here:</h1>
+    </section>
+    <section>
+        <!-- Here I put an 1:50 min composition Italian style -->
+        <audio controls autoplay loop>
+            <source src="./vids/Italian_Medley.mp3" type="audio/mpeg">
+            <!-- Using the loop, the audio will keep playing forever-->
+            Your browser does not support the audio element
+        </audio>
+        <!-- Copyright:Tommy Tallarico  - source: https://www.youtube.com/watch?v=vI0hkv078vo  -->
+        <!-- This song is part of the soundtrack of videogame Earthworm Jim 2 by Sega Genesis -->
+    </section>
+    <section>
+        <!-- This is my form element. There is only ONE form in this page-->
+        <form method="POST" action="somefile.php" enctype="multipart/form-data">
+        <!-- The two attributes that are mandatory for every form are: METHOD and ACTION-->
+         <section>
+         <!-- The first section will be related to the order-->
+         <h2>Build your order</h2>
+          <!--Radio type only allows you to pick one of the alternatives -->
+          <!--id attribute must be unique and can't be reused -->
+
+          <p><label>Pick the Size </label></p>
+
+          <input type="radio" id="small" name="Size" value="Small" required>
+          <label for="small">SMALL-(6 SLICES)</label>
+          <input type="radio" id="medium" name="Size" value="Medium">
+          <label for="medium">MEDIUM-(8 SLICES)</label>
+          <input type="radio" id="large" name="Size" value="Large">
+          <label for="large">LARGE-(10 SLICES)</label>
+           <input type="radio" id="exlarge" name="Size" value="Exlarge">
+          <label for="exlarge">X-LARGE-(12 SLICES)</label>
+
+          <p><label>Pick the Dough </label></p>
+          <input type="radio" id="regular" name="Masa" value="Regular" required>
+          <label for="regular">REGULAR</label>
+          <input type="radio" id="thincrust" name="Masa" value="Thincrust">
+          <label for="thincrust">THIN CRUST</label>
+          <input type="radio" id="thickcrust" name="Masa" value="Thickcrust">
+          <label for="thickcrust">THICK CRUST</label>
+          <input type="radio" id="stuffedcrust" name="Masa" value="Stuffedcrust">
+          <label for="stuffedcrust">STUFFED MOZARELLA CRUST</label>
+
+          <p><label>Pick the Cheese-Base </label></p>
+          <input type="radio" id="nocheese" name="Cheese" value="Nocheese" required>
+          <label for="nocheese">NO CHEESE</label>
+          <!-- I don't know who can ask for a pizza without cheese, but this option is offered in real websites -->
+          <input type="radio" id="regularcheese" name="Cheese" value="Regularcheese">
+          <label for="regularcheese">REGULAR</label>
+          <input type="radio" id="mozarella" name="Cheese" value="Mozarella">
+          <label for="mozarella">MOZARELLA</label>
+          <input type="radio" id="dairyfree" name="Cheese" value="Dairyfree">
+          <label for="dairyfree">DAIRY-FREE</label>
+
+          <p><label>Pick the Sauce-Base </label></p>
+          <input type="radio" id="nosauce" name="Sauce" value="Nosauce " required>
+          <label for="nosauce">NO SAUCE</label>
+          <!-- I don't know who can ask for a pizza without sauce, but this option is offered in real websites -->
+          <input type="radio" id="tomatosauce" name="Sauce" value="Tomatosauce">
+          <label for="tomatosauce">TOMATO SAUCE</label>
+          <input type="radio" id="alfredosauce" name="Sauce" value="Alfredosauce">
+          <label for="alfredosauce">ALFREDO SAUCE</label>
+          <input type="radio" id="bbqsauce" name="Sauce" value="Bbqsauce">
+          <label for="bbqsauce">BBQ SAUCE</label>
+          <input type="radio" id="buffalosauce" name="Sauce" value="Buffalosauce">
+          <label for="buffalosauce">BUFFALO SAUCE</label>
+
+          <!--Checkbox type allows you to pick more than one of the alternatives -->
+          <p><label>Pick the Veggie Toppings </label></p>
+          <!-- You can choose more than one of veggie topping-->
+          <input type="checkbox" id="veggietoppingchoice1" name="v1" value="Mushrooms">
+          <label for="veggietoppingchoice1">MUSHROOMS</label>
+          <input type="checkbox" id="veggietoppingchoice2" name="v2" value="Onions">
+          <label for="veggietoppingchoice2">ONIONS</label>
+          <input type="checkbox" id="veggietoppingchoice3" name="v3" value="Peppers">
+          <label for="veggietoppingchoice3">PEPPERS</label>
+          <input type="checkbox" id="veggietoppingchoice4" name="v4" value="Blackolives">
+          <label for="veggietoppingchoice4">BLACK OLIVES</label>
+          <input type="checkbox" id="veggietoppingchoice5" name="v5" value="Tomatoes">
+          <label for="veggietoppingchoice5">TOMATOES</label>
+          <input type="checkbox" id="veggietoppingchoice6" name="v6" value="Pineapple">
+          <label for="veggietoppingchoice6">PINEAPPLE</label>
+
+          <p><label>Pick the Meat Toppings </label></p>
+          <!-- You can choose more than one of meat topping-->
+          <input type="checkbox" id="meattoppingchoice1" name="m1" value="Pepperoni">
+          <label for="meattoppingchoice1">PEPPERONI</label>
+          <input type="checkbox" id="meattoppingchoice2" name="m2" value="Baconstrips">
+          <label for="meattoppingchoice2">BACON STRIPS</label>
+          <input type="checkbox" id="meattoppingchoice3" name="m3" value="Chickenstrips">
+          <label for="meattoppingchoice3">CHICKEN STRIPS</label>
+          <input type="checkbox" id="meattoppingchoice4" name="m4" value="Italianham">
+          <label for="meattoppingchoice4">ITALIAN HAM</label>
+          <input type="checkbox" id="meattoppingchoice5" name="m5" value="Salami">
+          <label for="meattoppingchoice5">SALAMI</label>
+          <input type="checkbox" id="meattoppingchoice6" name="m6" value="Sausages">
+          <label for="meattoppingchoice6">SAUSAGES</label>
+
+          <p><label>Pick the Cheese Toppings </label></p>
+          <!-- You can choose more than one of cheese topping-->
+          <input type="checkbox" id="cheesetoppingchoice1" name="ch1" value="Parmesancheese">
+          <label for="cheesetoppingchoice1">PARMESAN</label>
+          <input type="checkbox" id="cheesetoppingchoice2" name="ch2" value="Fetacheese">
+          <label for="cheesetoppingchoice2">FETA</label>
+          <input type="checkbox" id="cheesetoppingchoice3" name="ch3" value="Provolonecheese">
+          <label for="cheesetoppingchoice3">PROVOLONE</label>
+          <input type="checkbox" id="cheesetoppingchoice4" name="ch4" value="Cheddarcheese">
+          <label for="cheesetoppingchoice4">CHEDDAR</label>
+
+          <p><label>Pick the Sides </label></p>
+          <input type="checkbox" id="sidechoice1" name="s1" value="Chickennuggets">
+          <label for="sidechoice1">CHICKEN NUGGETS X 8</label>
+          <input type="checkbox" id="sidechoice2" name="s2" value="BbqWings">
+          <label for="sidechoice2">BBQ WINGS X 10</label>
+          <input type="checkbox" id="sidechoice3" name="s3" value="BreadSticks">
+          <label for="sidechoice3">BREAD STICKS X 6</label>
+          <input type="checkbox" id="sidechoice4" name="s4" value="Breadstuffedcheese">
+          <label for="sidechoice4">BREAD STUFFED CHEESE X 4</label>
+
+          <p><label>Pick your drink (2L Bottle)</label></p>
+          <!-- You can choose only one kind of drink -->
+          <input type="radio" id="coke" name="Drink" value="Coke">
+          <label for="coke">COKE</label>
+          <input type="radio" id="pepsi" name="Drink" value="Pepsi">
+          <label for="pepsi">PEPSI</label>
+          <input type="radio" id="sprite" name="Drink" value="Sprite">
+          <label for="sprite">SPRITE</label>
+
+          <p><label>Pick sauces for dipping</label></p>
+          <input type="checkbox" id="saucedippingchoice1" name="sd1" value="Garlicds">
+          <label for="saucedippingchoice1">GARLIC DIPPING SAUCE</label>
+          <input type="checkbox" id="saucedippingchoice2" name="sd2" value="Ranchds">
+          <label for="saucedippingchoice2">RANCH CUP</label>
+          <input type="checkbox" id="saucedippingchoice3" name="sd3" value="Marinarads">
+          <label for="saucedippingchoice3">MARINARA CUP</label>
+          <p></p>
+         </section>
+         <section>
+         <!-- The second section will be related to the personal data of the client-->
+         <h2>Personal information</h2>
+         <!-- I used a div to separate the h2 to the rest of the form inside this section-->
+          <div class="perinf">
+         <p><label>Your First Name</label>
+         <input type="text" name="FirstName" placeholder="First Name  (Required)" required></p>
+         <p><label>Your Last Name</label>
+         <input type="text" name="LastName" placeholder="Last Name  (Required)" required></p>
+         <p><label>Your Phone Number</label>
+         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="705-123-4567" required></p>
+         <p><label>Your Email</label>
+         <input type="email" name="Email" placeholder="Your email  (Required)" required></p>
+         <p> <label>Your Address</label>
+         <textarea name="message" rows="3" cols="50" placeholder="Your address here" required></textarea></p>
+         <!-- In the home page is stated that currently only deliveries orders are accepted-->
+         </div>
+         </section>
+         <section>
+         <input type="reset" class="boton1" value="Reset Order">
+         <input type="submit" class="boton1" value="Submit Order">
+         </section>
+        </form>
+    </section>
+</main>
+<footer>
+    <div>
+        <img src="./img/logo_garlfied.jpg" alt="Garfield Logo">
+        <!--Garfield is an American comic strip created by Jim Davis. -->
+        <!--Also, Garfield loves pizza -->
+    </div>
+    <div>
+        <p>©Susana Cajavilca Design. 2023. All rights reserved</p>
+    </div>
+    <div>
+        <img src="./img/logo_pizza2.jpg" alt="Pizza Logo 2">
+    </div>
+</footer>
+</body>
+</html>
